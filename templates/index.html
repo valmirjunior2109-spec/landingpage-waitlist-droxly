@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droxly — Controle financeiro simples</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/landing.css">
+
+</head>
+<body>
+
+<!-- ===== HEADER + HERO ===== -->
+<header class="header-hero">
+    <!-- LOGO -->
+<img 
+  src="../static/imagens/logo-droxlytransparente.png" 
+  alt="Droxly" 
+  class="logo fade-in"
+>
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="fade-in">
+            Controle seu dinheiro <br> sem complicação
+        </h1>
+        <p class="hero-text fade-in">
+            A Droxly ajuda quem vive de salário a organizar suas finanças
+            de forma clara, simples e sem planilhas.
+        </p>
+
+        <a 
+            href="https://droxly.eo.page/3t656"
+            target="_blank"
+            class="btn fade-in"
+        >
+            Entrar na lista de espera
+        </a>
+    </section>
+</header>
+
+<!-- ===== FEATURES ===== -->
+<section class="features">
+    <div class="feature fade-up">
+        <h3>Simples</h3>
+        <p>Sem excesso de informações ou telas confusas.</p>
+    </div>
+
+    <div class="feature fade-up">
+        <h3>Visual limpo</h3>
+        <p>Design pensado para facilitar decisões financeiras.</p>
+    </div>
+
+    <div class="feature fade-up">
+        <h3>Feito pra você</h3>
+        <p>Ideal para quem vive de salário e quer controle real.</p>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="cta">
+    <h2 class="fade-in">Participe do início da Droxly</h2>
+    <p class="fade-in">
+        Entre na lista de espera e acompanhe o lançamento do MVP.
+    </p>
+
+    <a 
+        href="https://droxly.eo.page/3t656"
+        target="_blank"
+        class="btn fade-in"
+    >
+        Quero entrar na lista
+    </a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>Droxly © 2026 — Menos planilhas, mais controle</p>
+</footer>
+
+<!-- ===== ANIMAÇÕES ===== -->
+<script>
+    const faders = document.querySelectorAll('.fade-up');
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</body>
+</html>
