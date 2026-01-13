@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droxly - Lista de espera</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo-droxlypreta.png">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1905706406734369');
+    fbq('track', 'PageView');
+    </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1905706406734369&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+        pageLanguage: 'pt',
+        includedLanguages: 'en,pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        },
+        'google_translate_element'
+    );
+    }
+    </script>
+
+    <script
+    type="text/javascript"
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+
+<body>
+
+<!-- ===== HEADER + HERO ===== -->
+<header class="header-hero">
+    <!-- LOGO -->
+    <img 
+        src="imagens/logo-droxlytransparente.png" 
+        alt="Droxly" 
+        class="logo fade-in"
+    >
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="fade-in">
+            Controle financeiro como <br> benefício para colaboradores
+        </h1>
+
+        <p class="hero-text fade-in">
+            A Droxly ajuda empresas a oferecer um controle financeiro simples
+            para quem vive de salário — sem planilhas e sem complicação.
+        </p>
+
+        <a 
+            href="https://droxly.eo.page/3t656"
+            target="_blank"
+            class="btn fade-in"
+        >
+            Solicitar acesso para minha empresa
+        </a>
+           <div id="google_translate_element"></div>
+    </section>
+</header>
+
+<!-- ===== FEATURES ===== -->
+<section class="features">
+    <div class="feature fade-up">
+        <h3>Fácil de implementar</h3>
+        <p>Sem processos complexos ou longas configurações para a empresa.</p>
+    </div>
+
+    <div class="feature fade-up">
+        <h3>Visual que o colaborador entende</h3>
+        <p>Interface clara e intuitiva para decisões financeiras no dia a dia.</p>
+    </div>
+
+    <div class="feature fade-up">
+        <h3>Pensado para assalariados</h3>
+        <p>Ideal para quem recebe salário e precisa de controle real do dinheiro.</p>
+    </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta" id="cta">
+    <h2 class="fade-in">Leve a Droxly para sua empresa</h2>
+    <p class="fade-in">
+        Cadastre sua empresa e participe do início do Droxly como benefício
+        de bem-estar financeiro.
+    </p>
+
+    <a 
+        href="https://droxly.eo.page/3t656"
+        target="_blank"
+        class="btn fade-in"
+    >
+        Entrar na lista de espera para empresas
+    </a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <p>Droxly © 2026 — Menos planilhas, mais controle financeiro</p>
+</footer>
+
+<!-- ===== ANIMAÇÕES ===== -->
+<script>
+    const faders = document.querySelectorAll('.fade-up');
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('appear');
+            observer.unobserve(entry.target);
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</body>
+</html>
+
+
+
+
+
